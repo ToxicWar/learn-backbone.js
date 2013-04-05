@@ -26,21 +26,31 @@
         </ul>
       </header>
       <section>
-        <h3>Data Types</h3>
-        <p>Chrome console:</p>
-        <pre>
-          <code>
-            var person = new Person({first_name: 'Anton', last_name: 'Larkin', age: 19, occupation: 'django developer'})
-            person
-            person.age
-            person.first_name
-            person.last_name
-            person.occupation
-            person.work()
-            var person2 = new Person({first_name: 'Us', last_name: 'Su', age: 20, occupation: 'usik'})
-            person2.work()
-          </code>
-        </pre>
+<h3>Data Types</h3>
+<p>Let's open our file index.html and to do the following in the Chrome console.</p>
+<p>Create person:</p>
+<pre>
+> var person = new Person({first_name: 'Anton', age: 19, hobby: 'Django developer'})
+</pre>
+<p>Let's look at the resulting person</p>
+<pre>
+> person
+  Person {first_name: "Anton", age: 19, hobby: "Django developer", work: function}
+> person.first_name
+  "Anton"
+> person.age
+  19
+> person.hobby
+  "Django developer"
+> person.work()
+  "Anton is working."
+</pre>
+<p>Create another person</p>
+<pre>
+> var person2 = new Person({first_name: 'Us', age: 20, hobby: 'Android'})
+> person2.work()
+  "Us is working."
+</pre>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/ToxicWar">ToxicWar</a></p>
@@ -48,6 +58,5 @@
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
   </body>
 </html>
