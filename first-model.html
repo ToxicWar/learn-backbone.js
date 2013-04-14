@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learn-backbone.js by ToxicWar</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>Learn-backbone.js</h1>
+        <p>Connected to the Backbone</p>
+
+        <p class="view"><a href="https://github.com/ToxicWar/learn-backbone.js">View the Project on GitHub <small>ToxicWar/learn-backbone.js</small></a></p>
+
+        <ul>
+            <li><a href="https://github.com/ToxicWar/learn-backbone.js">View On <strong>GitHub</strong></a></li>
+        </ul>
+    </header>
+    <section>
+        <h3>First backbone model</h3>
+<p>Create person with default values</p>
+<pre>
+> var person = new Person()
+  undefined
+</pre>
+<p>Check data in the model</p>
+<pre>
+> person.age
+  undefined
+> person.first_name
+  undefined
+> person.last_name
+  undefinde
+</pre>
+<p>We use the method 'get'</p>
+<pre>
+> person.get('first_name')
+  Anton
+> person.get('last_name')
+  Larkin
+> person.get('age')
+  19
+</pre>
+<p>Use method 'work'</p>
+<pre>
+> var person = new Person()
+  undefined
+> person.work()
+  "Anton Larkin is working."
+</pre>
+<p>Create person with user values</p>
+<pre>
+> var person = new Person({first_name: 'Jeffrey', last_name: 'Way', age: 27})
+  undefined
+> person.toJSON()
+  Object
+</pre>
+<p>Method 'set'</p>
+<pre>
+> person.get('occupation')
+  "worker"
+> person.set('occupation', 'Django Developer')
+  d
+> person.toJSON()
+  Object
+</pre>
+    </section>
+    <footer>
+        <p>This project is maintained by <a href="https://github.com/ToxicWar">ToxicWar</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+    </footer>
+</div>
+<script src="javascripts/scale.fix.js"></script>
+
+</body>
+</html>
