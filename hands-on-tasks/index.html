@@ -6,6 +6,11 @@
 </head>
 <body>
 	<h1>My Tasks</h1>
+	<form id="addTask" action="">
+		<input type="text" placeholder="Your new task">
+		<input type="submit" value="Add Task">
+	</form>
+
 	<div class="tasks">
 		<script id="taskTemplate" type="text/template">
 			<span><%= title %></span> <button class="edit">Edit</button> <button class="delete">Delete</button>
