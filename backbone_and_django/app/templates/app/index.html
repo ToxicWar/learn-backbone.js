@@ -1,12 +1,13 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
     <title></title>
 </head>
 <body>
-    <script src="../libs/underscore-min.js"></script>
-    <script src="../libs/jquery-1.9.1.min.js"></script>
-    <script src="../libs/backbone-min.js"></script>
-    <script src="main.js"></script>
+    <script src="{% static 'app/js/libs/underscore-min.js' %}"></script>
+    <script src="{% static 'app/js/libs/jquery-1.9.1.min.js' %}"></script>
+    <script src="{% static 'app/js/libs/backbone-min.js' %}"></script>
+    <script src="{% static 'app/js/main.js' %}"></script>
 </body>
 </html>
