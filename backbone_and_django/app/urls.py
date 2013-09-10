@@ -3,9 +3,9 @@ from rest_framework import routers
 import views
 
 router = routers.DefaultRouter()
-router.register(r'tasks', views.TaskList)
-# router.register(r'task/{id}', views.TaskDetail)
+router.register(r'tasks', views.TaskViewSet)
 
-urlpatterns = patterns('app.views',
-    url(r'^', include(router.urls)),
+urlpatterns = patterns('',
+    url(r'^$', 'app.views.home', name='Home'),
+    url(r'', include(router.urls)),
 )
