@@ -6,10 +6,10 @@
 		Views: {}
 	};
 
-	App.Views.Task = Backbone.Model.extend({
+	App.Models.Task = Backbone.Model.extend({
 		defaults: {
 			title: '',
-			completed: false,
+			is_completed: false,
 			id: ''
 		},
 		urlRoot: 'tasks'
