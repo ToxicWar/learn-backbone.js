@@ -1,22 +1,22 @@
 (function() {
 
-	window.App = {
-		Models: {},
-		Collections: {},
-		Views: {}
-	};
+    window.App = {
+        Models: {},
+        Collections: {},
+        Views: {}
+    };
 
-	App.Models.Task = Backbone.Model.extend({
-		defaults: {
-			title: '',
-			is_completed: false
-		},
-		urlRoot: 'tasks/'
-	});
+    App.Models.Task = Backbone.Model.extend({
+        defaults: {
+            title: '',
+            is_completed: false
+        },
+        urlRoot: '/tasks/'
+    });
 
     App.Collections.Tasks = Backbone.Collection.extend({
         model: App.Models.Task,
-        url: 'tasks/'
+        url: '/tasks/'
     });
 
     App.Views.Tasks = Backbone.View.extend({
@@ -55,6 +55,6 @@
     window.tasksCollection.fetch();
 
     var tasksView = new App.Views.Tasks({collection: tasksCollection})
-	$(".tasks").html(tasksView.render().el);
+    $(".tasks").html(tasksView.render().el);
 
 })();
